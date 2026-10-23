@@ -1,10 +1,13 @@
 
+
 import './switch.scss'
 
-const Switch = () => {
+const Switch = ({ isActive, onClick }) => {
 
     return (
-        <div className="switch">
+        <div className={`switch ${isActive ? 'switch-active' : ''}`}
+            onClick={onClick}
+        >
             <div className="switch__round"></div>
         </div>
     )

@@ -1,9 +1,19 @@
+import { useState } from 'react';
 
 import Switch from '../Switch/Switch'
 
 import './areaWidget.scss'
 
 const AreaWidget = () => {
+
+    const [unit, setUnit] = useState('km');
+
+    const isSwitchActive = unit === 'mi';
+
+    const handleSwitchClick = () => {
+        setUnit(unit === 'km' ? 'mi' : 'km');
+    }
+
 
     return (
         <div className="area">
@@ -24,8 +34,9 @@ const AreaWidget = () => {
             </div>
             <div className="area__widget">
                 <div className="area__unit">km² / mi²</div>
-                <Switch />
-                <div className="area__value">30528</div>
+                <Switch isActive={isSwitchActive} 
+                        onClick={handleSwitchClick} />
+                <div className="area__value">{unit === 'km' ? '30528' : '11786'}</div>
             </div>
         </div>
     )
