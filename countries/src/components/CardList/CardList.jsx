@@ -1,12 +1,12 @@
 
 import Card from '../Card/Card'
 
-import './widgetsLayout.scss'
+import './cardList.scss'
 
-const WidgetsLayout = () => {
+const CardList = () => {
 
     return (
-        <div className="widgetsLayout">
+        <div className="list">
             <Card />
             <Card />
             <Card />
@@ -14,4 +14,4 @@ const WidgetsLayout = () => {
     )
 }
 
-export default WidgetsLayout
+export default CardList

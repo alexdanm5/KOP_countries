@@ -1,0 +1,18 @@
+.area {
+    &__header {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &__widget {
+        margin-top: 5px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 16px;
+    }
+}

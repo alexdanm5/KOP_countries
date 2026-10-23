@@ -15,7 +15,7 @@ const CardHeader = () => {
             <div className="info__general">
                 <h2 className="info__name">Belgium</h2>
                 <div className="info__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                    Belgium is a monarchy with Brussels as its capital, host to the main institutions of the European Union and NATO. Dutch, French and German are the official languages, the euro is the currency, and chemicals, medicines and port trade lead exports.
                 </div>
             </div>
             

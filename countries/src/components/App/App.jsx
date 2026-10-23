@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import WidgetsLayout from '../WidgetsLayout/WidgetsLayout'
+import CardList from '../CardList/CardList'
 
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <WidgetsLayout />
+      <CardList />
     </div>
   )
 }
