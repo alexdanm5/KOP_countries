@@ -1,0 +1,14 @@
+.widget {
+    &__header {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &__content {
+        margin-top: 5px;
+    }
+}

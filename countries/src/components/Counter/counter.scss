@@ -1,0 +1,29 @@
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &__button {
+        border-radius: 9px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 117%;
+        &-minus {
+            background: #efeef8;
+            color: #5553ad;
+        }
+        &-plus {
+            background: #5553ad;
+            color: #fff;
+        }
+    }
+    &__value {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 143%;
+        text-align: center;
+        color: #22242d;
+    }
+}
