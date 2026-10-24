@@ -6,7 +6,7 @@ import './cardList.scss'
 const CardList = () => {
 
     return (
-        <div className="list">
+        <div className="widgetsLayout">
             <Card />
             <Card />
             <Card />

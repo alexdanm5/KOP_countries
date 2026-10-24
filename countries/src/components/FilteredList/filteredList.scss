@@ -1,0 +1,35 @@
+.filteredList {
+    &__item {
+        padding: 16px 0;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    &__country {
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+        background: #f6f5f1;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__language {
+        font-weight: 400;
+        font-size: 16px;
+        color: #22242d;
+    }
+    &__btn {
+        display: block;
+        padding: 8px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 9px;
+        background: #efeef8;
+        font-size: 16px;
+        font-weight: 400;
+        color: #5553ad;
+    }
+}
