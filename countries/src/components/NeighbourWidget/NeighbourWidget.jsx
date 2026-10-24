@@ -1,9 +1,18 @@
-
+import { useState } from 'react';
 import Counter from '../Counter/Counter';
 
 import './neighbourWidget.scss';
 
 const NeighbourWidget = () => {
+    const [count, setCount] = useState(0);
+
+    const changeNextNeighbour = () => {
+        setCount(count + 1);
+    }
+
+    const changePrevNeighbour = () => {
+        setCount(count - 1);
+    }
     return (
         <div className="widget">
             <div className="widget__header">
@@ -16,7 +25,10 @@ const NeighbourWidget = () => {
                 <div className="widget__title">Neighbouring countries</div>
             </div>
             <div className="widget__content">
-                <Counter />
+                <Counter onPrev={changePrevNeighbour} 
+                         onNext={changeNextNeighbour} 
+                         isActivNeighbour={count} 
+                />
             </div>
         </div>
     )

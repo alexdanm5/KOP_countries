@@ -2,12 +2,12 @@
 
 import './counter.scss';
 
-const Counter = () => {
+const Counter = ({ onPrev, onNext, isActivNeighbour }) => {
     return (
         <div className="counter">
-            <button className="counter__button counter__button-minus">–</button>
-            <div className="counter__value">0</div>
-            <button className="counter__button counter__button-plus">+</button>
+            <button className="counter__button counter__button-minus" onClick={onPrev}>–</button>
+            <div className="counter__value">{isActivNeighbour}</div>
+            <button className="counter__button counter__button-plus" onClick={onNext}>+</button>
         </div>
     )
 }
