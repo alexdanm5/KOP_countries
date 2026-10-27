@@ -4,12 +4,11 @@ import './filteredList.scss';
 
 const FilteredList = ({country}) => {
     
-    let index = 1;
     return (
         <ul className="filteredList">
-            {Object.entries(country).map(([country, leng]) => (
+            {Object.entries(country).map(([country, leng], i) => (
                 
-                    <li className="filteredList__item" key={index++}>
+                    <li className="filteredList__item" key={i+1}>
                         <div className="filteredList__country">{country}</div>
                         <div className="filteredList__language">{leng}</div>
                     </li>
