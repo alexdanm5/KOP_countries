@@ -1,0 +1,123 @@
+[
+    {
+        "id" : 1,
+        "name": "Belgium",
+        "flag": "https://flags.restcountries.com/v5/w640/be.png",
+        "region": "Europe",
+        "description": "Belgium is a monarchy with Brussels as its capital, host to the main institutions of the European Union and NATO. Dutch, French and German are the official languages, the euro is the currency, and chemicals, medicines and port trade lead exports.",
+        "gini": {
+            "2019" : 27.2,
+            "2020" : 26.0,
+            "2021" : 26.6,
+            "2022" : 26.4,
+            "2023" : 26.8
+        },
+        "area": {
+            "km" : 30528,
+            "mi" : 11786.9
+        },
+        "borders": [
+            "FRA",
+            "DEU",
+            "LUX",
+            "NLD"
+        ],
+        "translation": {
+            "de": "Belgien",
+            "fr": "Belgique",
+            "ja": "ベルギー",
+            "it": "Belgio",
+            "nl": "België"
+        }
+    },
+    {
+        "id" : 2,
+        "name": "Germany",
+        "flag": "https://flags.restcountries.com/v5/w640/de.png",
+        "region": "Europe",
+        "description": "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes.",
+        "gini": {
+            "2019" : 31.7,
+            "2020" : 31.4,
+            "2021" : 31.7,
+            "2022" : 31.1,
+            "2023" : 31.3
+        },
+        "area": {
+            "km" : 357022,
+            "mi" : 137847
+        },
+        "borders": [
+            "AUT",
+            "BEL",
+            "CZE",
+            "DNK",
+            "FRA",
+            "LUX",
+            "NLD",
+            "POL",
+            "CHE"
+        ],
+        "translation": {
+            "de": "Deutschland",
+            "fr": "Allemagne",
+            "it": "Germania",
+            "pt": "Alemanha",
+            "hr": "Njemačka"
+        }
+    },
+    {
+        "id" : 3,
+        "name": "Canada",
+        "flag": "https://flags.restcountries.com/v5/w640/ca.png",
+        "region": "Americas",
+        "description": "Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic to the Pacific and northward into the Arctic Ocean, covering 9.98 million square kilometres, making it the world's second-largest country by total area.",
+        "gini": {
+            "2019" : 33.3,
+            "2020" : 31.6,
+            "2021" : 31.5,
+            "2022" : 31.6,
+            "2023" : 31.8
+        },
+        "area": {
+            "km" : 9984670,
+            "mi" : 3855100
+        },
+        "borders": [
+            "USA"
+        ],
+        "translation": {
+            "de": "Kanada",
+            "es": "Canadá",
+            "ja": "カナダ",
+            "it": "Canada",
+            "br": "Canadá"
+        }
+    },
+    {
+        "id" : 4,
+        "name": "Japan",
+        "flag": "https://flags.restcountries.com/v5/w640/jp.png",
+        "region": "Asia",
+        "description": "Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is renowned for its historical shrines, imperial palaces, mountainous national parks, and densely populated modern cities like Tokyo.",
+        "gini": {
+            "2019" : 32.9,
+            "2020" : 32.9,
+            "2021" : 32.8,
+            "2022" : 32.9,
+            "2023" : 32.9
+        },
+        "area": {
+            "km" : 377975,
+            "mi" : 145937
+        },
+        "borders": [],
+        "translation": {
+            "de": "Japan",
+            "es": "Japón",
+            "fr": "Japon",
+            "ja": "日本",
+            "br": "Japão"
+        }
+    }
+]

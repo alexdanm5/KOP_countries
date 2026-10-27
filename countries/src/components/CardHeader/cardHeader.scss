@@ -54,7 +54,6 @@
         padding: 4px 7px;
         width: 59px;
         height: 23px;
-        background: #eaf5ef;
         display: flex;
         gap: 1px;
         &-arrow {
@@ -72,4 +71,27 @@
         font-size: 12px;
         color: #747580;
     }
+}
+
+.giniUp {
+    .info__gini {
+        background: #f6e4e4;
+    }
+    .info__gini-value {
+    color: #741818;
+    }
+}
+.giniDown {
+    .info__gini {
+        background: #eaf5ef;
+    }
+    .info__gini-value {
+    color: #187452;
+    }
+    .info__gini-arrow {
+        transform: rotate(180deg);
+    }
+}
+.noGini {
+    display: none;
 }

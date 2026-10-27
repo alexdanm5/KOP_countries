@@ -3,15 +3,26 @@ import Counter from '../Counter/Counter';
 
 import './neighbourWidget.scss';
 
-const NeighbourWidget = () => {
+const NeighbourWidget = ({borders}) => {
     const [count, setCount] = useState(0);
 
     const changeNextNeighbour = () => {
-        setCount(count + 1);
+        if (count < borders.length - 1) {
+            setCount(count + 1);
+        }
+        
     }
 
     const changePrevNeighbour = () => {
-        setCount(count - 1);
+        if (count > 0) {
+            setCount(count - 1);
+        }
+    }
+
+    let currentBorder = borders[count];
+
+    if (!borders || borders.length === 0) {
+        currentBorder = "No borders";
     }
     return (
         <div className="widget">
@@ -27,7 +38,7 @@ const NeighbourWidget = () => {
             <div className="widget__content">
                 <Counter onPrev={changePrevNeighbour} 
                          onNext={changeNextNeighbour} 
-                         isActivNeighbour={count} 
+                         isActivNeighbour={currentBorder} 
                 />
             </div>
         </div>

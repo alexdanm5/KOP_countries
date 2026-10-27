@@ -6,17 +6,17 @@ import Divider from '../Divider/Divider'
 
 import './card.scss'
 
-const Card = () => {
+const Card = ({country}) => {
 
     return (
         <div className="card">
-            <CardHeader />
+            <CardHeader countryHeader={country}/>
 
             <Divider />
-            <Widgets />
+            <Widgets widgets={country}/>
             
             <Divider />
-            <ListWidget />
+            <ListWidget list={country}/>
         </div>
     )
 }

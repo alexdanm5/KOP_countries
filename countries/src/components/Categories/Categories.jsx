@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import './categories.scss';
 
-const Categories = () => {
+const Categories = ({onSortAToZ, onSortZToA}) => {
     const [isListVisible, setIsListVisible] = useState(false);
 
     const toggleListVisibility = () => {
@@ -27,8 +27,8 @@ const Categories = () => {
                 </button>
             </div>
             <ul className="categories__list">
-                <li className="categories__item">Category 1</li>
-                <li className="categories__item">Category 2</li>
+                <li className="categories__item" onClick={onSortAToZ}>Sort by country A to Z</li>
+                <li className="categories__item" onClick={onSortZToA}>Sort by country Z to A</li>
                 <li className="categories__item">Category 3</li>
             </ul>
         </div>

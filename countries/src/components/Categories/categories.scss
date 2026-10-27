@@ -26,12 +26,16 @@
         background: none;
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
     &__list {
         margin-top: 12px;
         display: flex;
         flex-direction: column;
         gap: 8px;
+    }
+    &__item {
+        cursor: pointer;
     }
 }
 
