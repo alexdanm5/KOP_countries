@@ -10,7 +10,6 @@ const useCountriesService = () => {
 		const res = await request(
 			`${_apiBase}?limit=9&offset=${offset}`
 		);
-        console.log(res.data.objects)
 		return res.data.objects.map(_transformCountries);
 	};
 

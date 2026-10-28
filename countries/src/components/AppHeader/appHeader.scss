@@ -1,0 +1,20 @@
+.appHeader {
+    &__btns {
+        display: flex;
+        gap: 10px;
+    }
+    &__btn {
+        width: 170px;
+        height: 40px;
+        border-radius: 9px;
+        border: none;
+        background: #efeef8;
+        color: #5553ad;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+.btn-active {
+    background: #5553ad;
+    color: #fff;
+}
