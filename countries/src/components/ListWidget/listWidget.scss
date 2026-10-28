@@ -11,4 +11,16 @@
     &__filteredList {
         margin-top: 16px;
     }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 40px;
+        border-radius: 9px;
+        border: none;
+        background: #efeef8;
+        color: #5553ad;
+        font-size: 14px;
+        cursor: pointer;
+    }
 }

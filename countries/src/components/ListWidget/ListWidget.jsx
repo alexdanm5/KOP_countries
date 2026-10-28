@@ -6,16 +6,18 @@ import './listWidget.scss';
 
 const ListWidget = ({list}) => {
 
-    const {translation} = list;
+    const [style, setStyle] = useState(false);
 
-    const [translationList, setTranslationList] = useState(translation);
+    const {translations} = list;
+
+    const [translationList, setTranslationList] = useState(translations);
 
 
     const sortByCountryNameAZ = () => {
-        const sortedObj = Object.keys(translation)
+        const sortedObj = Object.keys(translations)
             .sort() 
             .reduce((acc, key) => {
-                acc[key] = translation[key];
+                acc[key] = translations[key];
                 return acc; 
             }, {});
             
@@ -23,15 +25,16 @@ const ListWidget = ({list}) => {
     }
 
     const sortByCountryZA = () => {
-        const sortedObj = Object.keys(translation)
+        const sortedObj = Object.keys(translations)
             .sort()      
             .reverse()   
             .reduce((acc, key) => {
-                acc[key] = translation[key];
+                acc[key] = translations[key];
                 return acc;
             }, {});
         setTranslationList(sortedObj);
     }
+
 
     return(
         <div className="listWidget">
@@ -41,8 +44,13 @@ const ListWidget = ({list}) => {
                 <Categories onSortAToZ={sortByCountryNameAZ} onSortZToA={sortByCountryZA}/>
             </div>
             <div className="listWidget__filteredList">
-                <FilteredList country={translationList} />
+                <FilteredList translation={translationList} style={style} />
             </div>
+            <button className='listWidget__btn'
+            onClick={() => {
+               style ? setStyle(false) : setStyle(true)
+            }}
+            >Show more</button>
         </div>
     )
 }

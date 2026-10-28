@@ -6,7 +6,7 @@ import './areaWidget.scss'
 
 const AreaWidget = ({area}) => {
 
-    const {km, mi} = area;
+    const {kilometers, miles} = area;
 
     const [unit, setUnit] = useState('km');
 
@@ -38,7 +38,7 @@ const AreaWidget = ({area}) => {
                 <div className="area__unit">km² / mi²</div>
                 <Switch isActive={isSwitchActive} 
                         onClick={handleSwitchClick} />
-                <div className="area__value">{unit === 'km' ? km : mi}</div>
+                <div className="area__value">{unit === 'km' ? kilometers : miles}</div>
             </div>
         </div>
     )

@@ -4,6 +4,7 @@ import './cardHeader.scss'
 const CardHeader = ({countryHeader}) => {
     
     const {name, flag, description, region, gini} = countryHeader;
+
     
     const arrGini = Object.values(gini);
 
@@ -15,7 +16,7 @@ const CardHeader = ({countryHeader}) => {
             <div className="info__header">
                 <h3 className="info__region">{region}</h3>
                 <div className="info__flag">
-                    <img src={flag} alt="flag" />
+                    <img src={flag} alt="Flag" />
                 </div> 
             </div>
 
